@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sass勉強会用</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <script>
+      function viewportSet() {
+        var wsw = window.screen.width;
+        if (wsw < 375) {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=390, user-scalable=no, target-densitydpi=device-dpi"
+            );
+        } else {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=device-width,initial-scale=1.0,viewport-fit=cover"
+            );
+        }
+      }
+      window.addEventListener("DOMContentLoaded", viewportSet, false);
+      window.addEventListener("resize", viewportSet, false);
+      window.addEventListener("orientationchange", viewportSet, false);
+    </script>
+  </head>
+  <body>
+    <div class="l-siteWrapper">
+      <header class="l-header">
+        <div class="l-wrapper l-header__inner">
+          <div class="l-header-logo">
+            <a href="/" class="l-header-logo__link">
+              <figure class="l-header-logo__image">
+                <img
+                  src="../assets/images/common/logo.svg"
+                  alt="My Work"
+                  width="121"
+                  height="27"
+                />
+              </figure>
+              <!-- /.l-header-logo__image -->
+            </a>
+            <!-- /.l-header-logo__link -->
+          </div>
+          <!-- /.l-header-logo -->
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item">
+                <a href="/about" class="l-header-nav__link">About</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/works" class="l-header-nav__link">Works</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/news" class="l-header-nav__link">News</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/contact" class="l-header-nav__link">Contact</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="#" class="l-header-nav__link">
+                  <figure class="l-header-nav__image">
+                    <img
+                      src="../assets/images/common/icon-instagram.svg"
+                      alt=""
+                      width="21"
+                      height="20"
+                    />
+                  </figure>
+                  <!-- /.l-header-logo__image -->
+                </a>
+              </li>
+            </ul>
+            <!-- /.l-header-nav__list -->
+          </nav>
+          <!-- /.l-header-nav -->
+        </div>
+        <!-- /.l-header__inner -->
+      </header>
+      <!-- /.l-header -->
+      <main>
+        <section class="p-contact">
+          <div class="l-wrapper">
+            <h1 class="c-heading">Contact</h1>
+            <!-- /.c-heading -->
+            <form action="" method="" class="p-contact__form">
+              <div class="p-contact__inner">
+                <div class="p-contact__container">
+                  <div class="p-contact__item">
+                    <label for="name" class="p-contact__label u-uppercase"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="p-contact__input"
+                    />
+                  </div>
+                  <!-- /.p-contact__item -->
+                  <div class="p-contact__item">
+                    <label for="email" class="p-contact__label">E-mail</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="p-contact__input"
+                    />
+                  </div>
+                  <!-- /.p-contact__item -->
+                  <div class="p-contact__item">
+                    <label for="message" class="p-contact__label u-uppercase"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="p-contact__textarea"
+                    ></textarea>
+                  </div>
+                  <!-- /.p-contact__item -->
+                </div>
+                <!-- /.p-contact__container -->
+                <button type="submit" class="p-contact__submit">送信</button>
+              </div>
+              <!-- /.p-contact__inner -->
+            </form>
+            <!-- /.p-contact__form -->
+          </div>
+        </section>
+        <!-- /.p-contact -->
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <p class="l-footer__copy">&copy; 2020 My Work</p>
+          <!-- /.l-footer__copy -->
+        </div>
+        <!-- /.l-footer__inner -->
+      </footer>
+    </div>
+  </body>
+</html>

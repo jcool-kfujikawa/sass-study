@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。 | News |
+      Sass勉強会用
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <script>
+      function viewportSet() {
+        var wsw = window.screen.width;
+        if (wsw < 375) {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=390, user-scalable=no, target-densitydpi=device-dpi"
+            );
+        } else {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=device-width,initial-scale=1.0,viewport-fit=cover"
+            );
+        }
+      }
+      window.addEventListener("DOMContentLoaded", viewportSet, false);
+      window.addEventListener("resize", viewportSet, false);
+      window.addEventListener("orientationchange", viewportSet, false);
+    </script>
+  </head>
+  <body>
+    <div class="l-siteWrapper">
+      <header class="l-header">
+        <div class="l-wrapper l-header__inner">
+          <div class="l-header-logo">
+            <a href="/" class="l-header-logo__link">
+              <figure class="l-header-logo__image">
+                <img
+                  src="../../assets/images/common/logo.svg"
+                  alt="My Work"
+                  width="121"
+                  height="27"
+                />
+              </figure>
+              <!-- /.l-header-logo__image -->
+            </a>
+            <!-- /.l-header-logo__link -->
+          </div>
+          <!-- /.l-header-logo -->
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item">
+                <a href="/about" class="l-header-nav__link">About</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/works" class="l-header-nav__link">Works</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/news" class="l-header-nav__link">News</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/contact" class="l-header-nav__link">Contact</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="#" class="l-header-nav__link">
+                  <figure class="l-header-nav__image">
+                    <img
+                      src="../../assets/images/common/icon-instagram.svg"
+                      alt=""
+                      width="21"
+                      height="20"
+                    />
+                  </figure>
+                  <!-- /.l-header-logo__image -->
+                </a>
+              </li>
+            </ul>
+            <!-- /.l-header-nav__list -->
+          </nav>
+          <!-- /.l-header-nav -->
+        </div>
+        <!-- /.l-header__inner -->
+      </header>
+      <!-- /.l-header -->
+      <main>
+        <article class="p-news">
+          <div class="l-wrapper">
+            <div class="p-news-detail__heading">
+              <h1 class="p-news-detail__title">
+                デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。
+              </h1>
+              <!-- /.p-news-detail__title -->
+              <time datetime="2024-10-01" class="p-news-detail__date"
+                >2024.10.01</time
+              >
+              <!-- /.p-news-detail__date -->
+            </div>
+            <!-- /.p-news-detail__heading -->
+            <div class="p-news-detail__body">
+              <p class="p-news-detail__text">
+                ○月○日発売の、デザイン雑誌「ＸＸＸＸＸＸ
+                Vol.11』に掲載していただきました。
+              </p>
+              <!-- /.p-news-detail__text -->
+              <picture class="p-news-detail__image">
+                <img
+                  src="../../assets/images/works/works1.jpg"
+                  alt=""
+                  width="1280"
+                  height="834"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- /.p-news-detail__image -->
+            </div>
+            <!-- /.p-news-detail__body -->
+            <a href="/news" class="c-link">一覧に戻る</a>
+            <!-- /.c-link -->
+          </div>
+        </article>
+        <!-- /.p-top-news -->
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <p class="l-footer__copy">&copy; 2020 My Work</p>
+          <!-- /.l-footer__copy -->
+        </div>
+        <!-- /.l-footer__inner -->
+      </footer>
+    </div>
+  </body>
+</html>

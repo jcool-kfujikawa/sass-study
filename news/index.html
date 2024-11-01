@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Sass勉強会用</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <script>
+      function viewportSet() {
+        var wsw = window.screen.width;
+        if (wsw < 375) {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=390, user-scalable=no, target-densitydpi=device-dpi"
+            );
+        } else {
+          document
+            .querySelector("meta[name='viewport']")
+            .setAttribute(
+              "content",
+              "width=device-width,initial-scale=1.0,viewport-fit=cover"
+            );
+        }
+      }
+      window.addEventListener("DOMContentLoaded", viewportSet, false);
+      window.addEventListener("resize", viewportSet, false);
+      window.addEventListener("orientationchange", viewportSet, false);
+    </script>
+  </head>
+  <body>
+    <div class="l-siteWrapper">
+      <header class="l-header">
+        <div class="l-wrapper l-header__inner">
+          <div class="l-header-logo">
+            <a href="/" class="l-header-logo__link">
+              <figure class="l-header-logo__image">
+                <img
+                  src="../assets/images/common/logo.svg"
+                  alt="My Work"
+                  width="121"
+                  height="27"
+                />
+              </figure>
+              <!-- /.l-header-logo__image -->
+            </a>
+            <!-- /.l-header-logo__link -->
+          </div>
+          <!-- /.l-header-logo -->
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item">
+                <a href="/about" class="l-header-nav__link">About</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/works" class="l-header-nav__link">Works</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/news" class="l-header-nav__link">News</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="/contact" class="l-header-nav__link">Contact</a>
+              </li>
+              <li class="l-header-nav__item">
+                <a href="#" class="l-header-nav__link">
+                  <figure class="l-header-nav__image">
+                    <img
+                      src="../assets/images/common/icon-instagram.svg"
+                      alt=""
+                      width="21"
+                      height="20"
+                    />
+                  </figure>
+                  <!-- /.l-header-logo__image -->
+                </a>
+              </li>
+            </ul>
+            <!-- /.l-header-nav__list -->
+          </nav>
+          <!-- /.l-header-nav -->
+        </div>
+        <!-- /.l-header__inner -->
+      </header>
+      <!-- /.l-header -->
+      <main>
+        <section class="p-news">
+          <div class="l-wrapper">
+            <h1 class="c-heading">News</h1>
+            <!-- /.c-heading -->
+            <div class="p-news__list">
+              <article class="p-news__item">
+                <a href="/news/sample" class="p-news__link">
+                  <h2 class="p-news__title">
+                    デザイン雑誌「ＸＸＸＸＸＸ
+                    Vol.11』に掲載していただきました。
+                  </h2>
+                  <!-- /.p-news__title -->
+                  <time datetime="2024-10-01" class="p-news__date"
+                    >2024.10.01</time
+                  >
+                  <!-- /.p-news__date -->
+                </a>
+                <!-- /.p-news__link -->
+              </article>
+              <!-- /.p-news__item -->
+              <article class="p-news__item">
+                <a href="#" class="p-news__link">
+                  <h2 class="p-news__title">
+                    ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
+                  </h2>
+                  <!-- /.p-news__title -->
+                  <time datetime="2024-02-11" class="p-news__date"
+                    >2024.02.11</time
+                  >
+                  <!-- /.p-news__date -->
+                </a>
+                <!-- /.p-news__link -->
+              </article>
+              <!-- /.p-news__item -->
+              <article class="p-news__item">
+                <a href="#" class="p-news__link">
+                  <h2 class="p-news__title">
+                    【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+                  </h2>
+                  <!-- /.p-news__title -->
+                  <time datetime="2023-09-12" class="p-news__date"
+                    >2023.09.12</time
+                  >
+                  <!-- /.p-news__date -->
+                </a>
+                <!-- /.p-news__link -->
+              </article>
+              <!-- /.p-news__item -->
+            </div>
+            <!-- /.p-news__list -->
+            <ol class="l-pagenation">
+              <li class="l-pagenation__item">
+                <a
+                  href="#"
+                  class="l-pagenation__arrow l-pagenation__arrow--prev"
+                  aria-label="前のページへ"
+                >
+                  <img
+                    src="../assets/images/news/arrow.svg"
+                    alt=""
+                    width="9"
+                    height="16"
+                    loading="lazy"
+                  />
+                </a>
+                <!-- /.l-pagenation__arrow -->
+              </li>
+              <!-- /.l-pagenation__item -->
+              <li class="l-pagenation__item">
+                <a
+                  href="#"
+                  class="l-pagenation__link l-pagenation__link--active"
+                >
+                  1
+                </a>
+                <!-- /.l-pagenation__link -->
+              </li>
+              <!-- /.l-pagenation__item -->
+              <li class="l-pagenation__item">
+                <a href="#" class="l-pagenation__link">2</a>
+                <!-- /.l-pagenation__link -->
+              </li>
+              <!-- /.l-pagenation__item -->
+              <li class="l-pagenation__item">
+                <p class="l-pagenation__dot">･･･</p>
+                <!-- /.l-pagenation__dot -->
+              </li>
+              <!-- /.l-pagenation__item -->
+              <li class="l-pagenation__item">
+                <a href="#" class="l-pagenation__link">8</a>
+                <!-- /.l-pagenation__link -->
+              </li>
+              <!-- /.l-pagenation__item -->
+              <li class="l-pagenation__item">
+                <a
+                  href="#"
+                  class="l-pagenation__arrow l-pagenation__arrow--next"
+                  aria-label="次のページへ"
+                >
+                  <img
+                    src="../assets/images/news/arrow.svg"
+                    alt=""
+                    width="9"
+                    height="16"
+                    loading="lazy"
+                  />
+                </a>
+                <!-- /.l-pagenation__arrow -->
+              </li>
+              <!-- /.l-pagenation__item -->
+            </ol>
+            <!-- /.l-pagenation -->
+          </div>
+        </section>
+        <!-- /.p-top-news -->
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <p class="l-footer__copy">&copy; 2020 My Work</p>
+          <!-- /.l-footer__copy -->
+        </div>
+        <!-- /.l-footer__inner -->
+      </footer>
+    </div>
+  </body>
+</html>
