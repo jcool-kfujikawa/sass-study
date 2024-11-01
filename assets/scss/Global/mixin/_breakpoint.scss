@@ -2,9 +2,6 @@
 @use "sass:map";
 
 $breakpoints: (
-  "xs": (
-    max-width: 374px,
-  ),
   "sm": (
     max-width: 576px,
   ),
@@ -12,7 +9,7 @@ $breakpoints: (
     max-width: 768px,
   ),
   "lg": (
-    max-width: 1054px,
+    max-width: 992px,
   ),
   "xl": (
     max-width: 1200px,
